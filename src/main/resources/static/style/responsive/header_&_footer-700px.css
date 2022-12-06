@@ -1,0 +1,16 @@
+@media screen and (min-width:600px) and (max-width: 800px){
+    .popup{
+        width: 90%;
+        height: auto;
+        padding: 10px 5%;
+        left: 0;
+        right: 0;
+        column-gap: 0;
+    }
+
+    .popup .content{
+        flex-direction: row;
+        column-gap: 5px;
+
+    }
+}

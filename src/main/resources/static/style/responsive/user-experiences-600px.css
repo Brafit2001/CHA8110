@@ -1,0 +1,31 @@
+@media screen and (max-width:600px){
+
+
+    .user_section_1{
+        row-gap: 0;
+
+        margin: 20px 0 50px;
+    }
+
+    .user_section_1 .profile_pic_container{
+        width: 300px;
+        height: 300px;
+    }
+
+    .user_section_1 h1{
+        font-size: 38px;
+        line-height: 80px;
+    }
+
+    .user_section_1 .user_information{
+        row-gap: 0;
+    }
+
+    .user_section_1 .user_information h2{
+        font-size: 14px;
+    }
+
+    .user_section_2 h2{
+        font-size: 28px;
+    }
+}

@@ -1,0 +1,72 @@
+@media screen and (max-width:600px){
+
+    main{
+        padding: 0;
+    }
+    .Add-exp{
+        flex-direction: column;
+        align-items: center;
+
+        row-gap: 30px;
+    }
+
+    .Add-exp .left{
+        width: 90%;
+    }
+
+
+    .Add-exp .right{
+        width: 90%;
+    }
+    .Add-exp .collection-interests{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        width: 90%;
+
+        padding-left: 7%;
+
+        height: 180px;
+
+    }
+
+    .Add-exp .collection-interests .line{
+        display: none;
+    }
+    .Add-exp .collection-interests .item{
+        width: 90%;
+        justify-content: flex-start;
+    }
+
+    .Add-exp .collection-interests .text select{
+        width: 100%;
+    }
+
+    .Add-exp .collection-interests .text{
+        width: 90%;
+    }
+
+    .Add-exp .collection-interests .text input{
+        width: 90%;
+    }
+
+    .Add-info{
+        justify-content: center;
+        padding-left: 5%;
+        width: 90%;
+    }
+
+    .documentation .information{
+        flex-direction: column;
+    }
+
+    .documentation .column{
+        width: 90%;
+    }
+
+
+
+
+
+}

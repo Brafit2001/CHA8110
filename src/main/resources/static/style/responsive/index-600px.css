@@ -1,0 +1,64 @@
+@media screen and (max-width:600px){
+    main{
+        padding: 0;
+    }
+
+    .Explore-World .background{
+        height: 350px;
+        border-radius: 0;
+    }
+
+    .Explore-World .background h1{
+        font-size: 230%;
+    }
+
+    .Explore-World .background .edificio{
+        width: 100%;
+        position: absolute;
+        height: 70%;
+
+    }
+
+    .Explore-World .Search{
+
+        flex-direction: column;
+
+
+        width: 100%;
+        height: auto;
+        margin-top: -20px;
+
+    }
+
+    .Explore-World .Search .item{
+        width: 90%;
+        padding: 10px;
+    }
+
+    .Explore-World .Search .line{
+        display: none;
+    }
+
+    .Explore-World .Search .text{
+        width: 100%;
+    }
+    .Explore-World .Search .find{
+
+        margin: 0 auto -50px;
+        width: 80%;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+
+    .Explore-World .Search .find .loupe{
+        margin: 0;
+        padding: 0;
+    }
+
+    form input:focus~.barra::before{
+        width: 87%;
+    }
+
+
+}

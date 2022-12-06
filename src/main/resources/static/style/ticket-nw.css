@@ -1,0 +1,373 @@
+
+.ticket-main{
+	height: 200px;
+}
+.ticket_container{
+    background: #F8E9D4;
+    position: absolute;
+    width: 45%;
+    height: 18%;
+    min-height: 125px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+
+/*___________________________________________________________________________________________________-
+                                            CIRCLES
+  ___________________________________________________________________________________________________-
+*/
+
+.ticket_container .circles{
+    width: 100%;
+    height:100%;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    z-index: 100;
+}
+
+.ticket_container .circles-left,.ticket_container .circles-right{
+    background-color: white;
+    border-radius: 50%;
+    width: 13px;
+    height: 13px;
+    position: relative;
+    border: black solid 3px;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.ticket_container .circles-right{
+    left: 11px;
+}
+
+.ticket_container .circles-left{
+    right: 11px;
+}
+
+/*___________________________________________________________________________________________________-
+                                              TICKET
+  ___________________________________________________________________________________________________-
+*/
+
+.ticket{
+    display: flex;
+    flex-direction: row;
+
+    background: #F8E9D4;
+    border: black solid 3px;
+    width: 100%;
+    overflow: hidden;
+    
+    
+
+}
+
+.ticket p{
+	color: black;
+	text-transform: uppercase;
+}
+
+/*___________________________________________________________________________________________________-
+                                              LEFT
+  ___________________________________________________________________________________________________-
+*/
+
+
+
+.ticket .side-left{
+    width: 15%;
+}
+
+.ticket .side-left .text-side-left{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin-left: 30%;
+}
+
+.ticket .side-left .text-side-left .text-2-container{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    align-items: center;
+}
+
+.ticket .side-left .text-side-left .text-1-container{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    align-items: center;
+}
+
+
+.ticket .side-left .text-side-left .text-1{
+    font-size: 0.85vw;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ticket .side-left .text-side-left .text-2{
+    font-size: 1.35vw;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ticket .side-left p{ /*Rotation y font*/
+    font-family: 'Futura MdCn BT', sans-serif;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+/*___________________________________________________________________________________________________-
+                                              CENTER
+  ___________________________________________________________________________________________________-
+*/
+.ticket .center{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    border-left:black solid 3px ;
+    border-right:black solid 3px ;
+}
+
+.ticket .center .top-center{
+    height: 50%;
+    border-bottom:black solid 3px ;
+
+}
+
+.ticket .center .top-center p{
+    font-family: "Futura XBlk BT",sans-serif;
+    font-size: 2.5vw;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ticket .center .bottom-center{
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ticket .center .bottom-center .left-bottom-center{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    border-right:black solid 3px ;
+}
+
+.ticket .center .bottom-center .left-bottom-center .top-left-bottom-center{
+    height: 65%;
+    width: 100%;
+}
+
+.ticket .center .bottom-center .left-bottom-center .top-left-bottom-center p{
+    font-family: 'Futura XBlk BT', sans-serif;
+    font-size: 1.3vw;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    color: #F8E9D4;
+}
+
+.ticket .center .bottom-center .left-bottom-center .bottom-left-bottom-center{
+    height: 35%;
+    width: 100%;
+
+}
+
+.ticket .center .bottom-center .left-bottom-center .bottom-left-bottom-center p{
+    font-family: 'Futura MdCn BT', sans-serif;
+    font-size: 0.9vw;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top: rgb(0 0 0) solid 3px;
+}
+
+.ticket .center-bottom-bottom p{
+    font-family: 'Futura MdCn BT', sans-serif;
+
+}
+
+.ticket .center .bottom-center .right-bottom-center{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.ticket .center-bottom-right-bottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.ticket .bottom-right-top-center{
+    height: 65%;
+
+}
+
+.ticket .bottom-right-top-center p{
+    font-family: 'Futura XBlk BT', sans-serif;
+    font-size: 2vw;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+
+.ticket .bottom-right-bottom-center{
+    height: 35%;
+    display: flex;
+    width: 100%;
+
+}
+
+.ticket .bottom-right-bottom-center p{
+    font-family: 'Futura MdCn BT', sans-serif;
+    font-size: 0.9vw;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+}
+
+.ticket .left-bottom-right-bottom-center{
+    width: 95%;
+    border-top: rgb(0 0 0) solid 3px;
+
+}
+
+.ticket .right-bottom-right-bottom-center{
+    width: 5%;
+
+}
+
+.ticket .right-bottom-right-bottom-center p{
+    font-family: 'Futura XBlk BT', sans-serif;
+    font-size: 0.7vw;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    color: #F8E9D4;
+
+}
+
+
+/*___________________________________________________________________________________________________-
+                                              RIGHT
+  ___________________________________________________________________________________________________-
+*/
+
+.ticket .side-right{
+    width: 15%;
+}
+
+.ticket .side-right .text-side-right{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin-right: 30%;
+}
+
+.ticket .side-right .text-side-right .text-2-container{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    align-items: center;
+    column-gap: 10px
+}
+
+.ticket .side-right .text-side-right .text-1-container{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.ticket .side-right .text-side-right .text-1-container .arrow_up{
+    height: 10%;
+}
+
+.ticket .side-right .text-side-right .text-1-container .arrow_down{
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    height: 10%;
+}
+
+
+.ticket .side-right .text-side-right .text-1{
+    font-size: 0.85vw;
+    height: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.ticket .side-right .text-side-right .text-2{
+    font-size: 1.6vw;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.ticket .side-right p{ /*Rotation y font*/
+    font-family: 'Futura MdCn BT', sans-serif;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+
+

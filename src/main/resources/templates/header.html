@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" >
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>header</title>
+    <link rel="stylesheet" href="../static/style/header_&_footer.css" th:href="@{/style/header_&_footer.css}">
+</head>
+<body>
+  <header id="header">
+    <div class="item">
+      <a href="index.html"><img class="travel_int" th:src="@{/assets/icons/event_int.svg}" alt=""></a>
+    </div>
+
+    <div id="log-items"  class="item icons-log">
+
+      <a id="log-in" href="">Log In</a>
+      <a href=""><button type="button">Sing Up</button></a>
+    </div>
+    <form id=cerrars method=post action=Home>
+      <button value=confirm>Log Out</button>
+    </form>
+  </header>
+</body>
+</html>

@@ -1,0 +1,33 @@
+@media screen and (max-width:600px) {
+    body .log_sign_container{
+        margin: 50px auto 100px;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        row-gap: 30px;
+    }
+
+    #inputs_containers{
+        width: 60%;
+    }
+    body ::placeholder{
+        font-size: 15px;
+    }
+
+    body #confirm_button_containter{
+        margin-bottom: 40px;
+
+    }
+
+    body #confirm_button{
+        font-size: 15px;
+    }
+
+    #inputs_containers{
+        row-gap: 10px;
+    }
+
+    .add-profile{
+        margin-top: 30px;
+    }
+}

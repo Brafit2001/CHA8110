@@ -1,0 +1,213 @@
+:root {
+    --black: rgba(0, 0, 0, 1);
+    --main: rgba(67, 65, 65, 1);
+    --green-main: rgba(111, 166, 174, 1);
+    --hawkes-blue: rgba(213, 222, 255, 1);
+    --yellow: rgba(248, 251, 255, 1);
+    --orchid-white: rgba(255, 253, 242, 1);
+    --white: rgba(255, 255, 255, 0.902);
+
+    --font-size-xxxxxs: 10px;
+    --font-size-xxxxs: 12px;
+    --font-size-xxxs: 14px;
+    --font-size-xxs: 16px;
+    --font-size-xs: 18px;
+    --font-size-s: 20px;
+    --font-size-m: 24px;
+
+    --font-family-nunito_sans: 'Nunito Sans', sans-serif;
+    --font-family-roboto: "Roboto";
+    --font-family-sf_pro_display-medium: "SF Pro Display-Medium";
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+
+/*---------------------------SECTION1-------------------------*/
+.user_section_1{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    row-gap: 15px;
+
+    margin: 40px 0 100px;
+}
+
+.user_section_1 h1{
+    font-family: var(--font-family-nunito_sans);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 96px;
+    line-height: 131px;
+    text-align: center;
+
+    color: #434141;
+}
+
+.user_section_1 .profile_pic_container{
+    width: 490px;
+    height: 501px;
+
+    border-radius: 50%;
+    overflow: hidden;
+    filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.25));
+}
+
+.user_section_1 .profile_pic_container img{
+    width: 100%;
+    min-height: 100%;
+
+}
+
+.user_section_1 .user_information{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+
+    align-items: center;
+}
+
+.user_section_1 .user_information h2{
+    display: flex;
+
+    font-family: var(--font-family-nunito_sans);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+
+    color: #434141;
+}
+
+.user_section_2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 0 0 100px;
+}
+
+.user_section_2 h2{
+    font-family: var(--font-family-nunito_sans);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 57px;
+
+    color: #6FA6AE;
+}
+
+.user_section_2 h3{
+    font-family: var(--font-family-nunito_sans);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #434141;
+
+    margin-top: 20px;
+}
+
+.user_section_2 .experience_cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    wrap-option: 4;
+    width: 70%;
+    column-gap: 25px;
+    row-gap: 30px;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.user_section_2 .experience_cards .ind_card{
+    display:flex;
+    flex-direction: column;
+
+    width: 261px;
+    height: 343px;
+
+    background: #FFFFFF;
+    box-shadow: 0 4px 45px -15px rgba(0, 0, 0, 0.15);
+    border-radius: 25px;
+}
+
+.user_section_2 .experience_cards .ind_card .content_card{
+    display:flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding: 20px;
+}
+
+.user_section_2 .experience_cards .ind_card .content_card .content_card_sub_section2_img{
+    width: 220px;
+    height: 160px;
+
+    margin:0 auto;
+
+    filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.2));
+    border-radius: 10px;
+}
+
+.user_section_2 .experience_cards .ind_card .content_card h2{
+    font-family: var(--font-family-nunito_sans);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+
+    color: #6FA6AE;
+}
+
+.user_section_2 .experience_cards .ind_card .content_card h3{
+    font-family: var(--font-family-nunito_sans);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+
+    color: #434141;
+
+    margin: 0;
+}
+
+.user_section_2 .experience_cards .ind_card .content_card p{
+    font-family: var(--font-family-nunito_sans);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 14px;
+
+    color: #434141;
+}
+
+.user_section_2 .experience_cards .ind_card .content_card .content_card_sub_section2_location{
+    display:flex;
+    flex-direction: row;
+}
+
+.user_section_2 .experience_cards .ind_card .content_card .content_card_sub_section2_location img{
+    width: 16px;
+    height: 16px;
+}
+
+.user_section_2 .experience_cards .ind_card .content_card .content_card_sub_section2_location h2{
+    font-family: var(--font-family-nunito_sans);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #434141;
+}

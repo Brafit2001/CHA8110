@@ -1,0 +1,31 @@
+@media screen and (min-width:600px) and (max-width: 800px){
+    #section1 #background{
+        width: 100%;
+        height: auto;
+
+        overflow: hidden;
+        border-radius: 0;
+    }
+
+    #section1 #background h1{
+        position: absolute;
+    }
+
+    #section1 #background h3{
+        position: absolute;
+        margin-top: 100px;
+    }
+
+    #section1 #background img{
+        position: relative;
+        width: 100%;
+        height: auto;
+
+        overflow: hidden;
+        border-radius: 0;
+    }
+
+    #section1 #search{
+        width: 90%;
+    }
+}

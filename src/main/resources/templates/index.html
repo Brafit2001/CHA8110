@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ticketsell Page G81-10</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/style/index.css" th:href="@{/style/index.css}"/>
+</head>
+<body>
+    <main>
+        <div th:include="header.html"></div>
+        <section class="Explore-World">
+            <div class="background">
+                <h3>Events.int is all you need</h3>
+                <h1>Make your own events</h1>
+                <img class="edificio" th:src="@{/assets/edificio.png}" alt="">
+            </div>
+            <form class="Search">
+                <input type="hidden" name="accion" value="filtrarBBDD">
+                <div class="item">
+                    <img  th:src="@{/assets/icons/help.svg}" alt="Help SVG"/>
+                    <div class="text">
+                        <h2 class="green">Name</h2>
+                        <input type="text" placeholder="Event's name" name=filtrarnombre><span class="barra"></span>
+                    </div>
+                </div>
+                <div class="item">
+                    <img th:src="@{/assets/icons/category.svg}" alt="Category SVG"/>
+                    <div class="text">
+                        <h2 class="green">Category</h2>
+                        <select id="search-category" name="filtrarcategoria">
+                            <option value="0">Choose a collection</option>
+                            <option value="Concert">Concert</option>
+                            <option value="Festival">Festival</option>
+                            <option value="Museum">Museum</option>
+                            <option value="Sport Event">Sport Event</option>
+                        </select>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <img th:src="@{/assets/icons/location.svg}" alt="Location SVG"/>
+                    <div class="text">
+                        <h2 class="green">Location</h2>
+                        <input type="text" placeholder="Event's location" name=filtrarciudad><span class="barra"></span>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <img th:src="@{/assets/icons/calendar.svg}" alt="Calendar SVG"/>
+                    <div class="text">
+                        <h2 class="green">Date</h2>
+                        <input type="date" name=filtrarfecha><span class="barra"></span>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <img th:src="@{/assets/icons/trophy.svg}" alt="Trophy SVG"/>
+                    <div class="text">
+                        <h2 class="green">Hall</h2>
+                        <input type="text" placeholder="Event's hall" name=filtrarsala><span class="barra"></span>
+                    </div>
+
+                </div>
+                <div class="find">
+                    <input type=image class="loupe" th:src="@{/assets/icons/loupe.png}" alt="">
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

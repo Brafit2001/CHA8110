@@ -1,0 +1,166 @@
+:root {
+    --black: rgba(0, 0, 0, 1);
+    --main: rgba(67, 65, 65, 1);
+    --green-main: rgba(111, 166, 174, 1);
+    --hawkes-blue: rgba(213, 222, 255, 1);
+    --yellow: rgba(248, 251, 255, 1);
+    --orchid-white: rgba(255, 253, 242, 1);
+    --white: rgba(255, 255, 255, 0.902);
+
+    --font-size-xxxxxs: 10px;
+    --font-size-xxxxs: 12px;
+    --font-size-xxxs: 14px;
+    --font-size-xxs: 16px;
+    --font-size-xs: 18px;
+    --font-size-s: 20px;
+    --font-size-m: 24px;
+
+    --font-family-nunito_sans: 'Nunito Sans', sans-serif;
+    --font-family-roboto: "Roboto";
+    --font-family-sf_pro_display-medium: "SF Pro Display-Medium";
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+main{
+    padding: 0 20%;
+    font-family: var(--font-family-nunito_sans);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    color: var(--green-main);
+}
+
+/*________________________________________________TITLE______________________________________*/
+
+.title{
+    font-family: var(--font-family-nunito_sans);
+    color: var(--green-main);
+    font-size: 38px;
+    margin: 0 0 2rem;
+    padding-bottom: 0;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/*________________________________________________PHOTOS______________________________________*/
+
+.Photos{
+    display: flex;
+    flex-direction: column;
+    row-gap: 18px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.Photos .big{
+
+    height: 650px;
+    overflow: hidden;
+    filter: drop-shadow(0px 4px 25px rgba(0, 0, 0, 0.15));
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.Photos .big img{
+    border-radius: 25px;
+    height: 650px;
+}
+
+/*________________________________________________EVENT INFO______________________________________*/
+
+.event-info{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin-top: 5%;
+}
+
+.event-info-div{
+    display: flex;
+    flex-direction: row;
+    color: black;
+}
+
+/*________________________________________________TICKETS______________________________________*/
+
+.tickets .title{
+    margin: 3% 0;
+}
+
+.tickets-cards{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    width: 75%;
+    margin: 0 auto;
+
+}
+
+.sale{
+    display: flex;
+    flex-direction: row;
+    background: rgb(243, 239, 239);
+    box-shadow: 0 4px 45px -15px rgba(0, 0, 0, 0.23);
+    border-radius: 20px;
+    width: 90%;
+    padding: 18px 5%;
+    justify-content: center;
+}
+
+.sale div{
+    display: flex;
+    flex-direction: column;
+    line-height: 10px;
+    font-weight: 300;
+    color: black;
+}
+
+.sale .user{
+    width: 20%;
+    align-items: flex-start;
+    color: var(--green-main);
+    font-weight: bold;
+}
+
+.sale .info{
+    width: 60%;
+    align-items: center;
+}
+
+.sale .price{
+    width: 20%;
+    align-items: flex-end;
+}
+
+#ticket-form{
+	display: flex;
+	justify-content: center;
+}
+
+#add_ticket{
+    background: #434141;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    width: auto;
+
+    font-family: var(--font-family-nunito_sans);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+
+    color: white;
+
+    padding: 15px 40px;
+    cursor: pointer;
+}
+
