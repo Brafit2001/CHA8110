@@ -91,7 +91,6 @@ public class UserController {
 			if (!pUser.getPhone().equals("")){
 				us.setPhone(pUser.getPhone());
 			}
-			System.out.println(us.getName());
 			response = new ResponseEntity<>(daous.save(us), HttpStatus.OK);
 		}
 		return response;
