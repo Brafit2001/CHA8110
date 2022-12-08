@@ -47,7 +47,7 @@ public class UserController {
 	@PostMapping("/users")
 	public ResponseEntity<User> saveUser(@RequestBody User puser) {
 		ResponseEntity<User> response;
-		User us = daous.findByName(puser.getUsername());
+		User us = daous.findByUsername(puser.getUsername());
 
 		if (us != null) {
 			response = new ResponseEntity<>(HttpStatus.FORBIDDEN);
@@ -71,7 +71,7 @@ public class UserController {
 		if (us == null) {
 			response = new ResponseEntity<>(HttpStatus.NOT_FOUND);
 		} else {
-			if (pUser.getUsername().equals("") == false){
+			if (!pUser.getUsername().equals("")){
 				User usr = daous.findByUsername(pUser.getUsername());
 				if (usr != null) {
 					response = new ResponseEntity<>(HttpStatus.FORBIDDEN);
@@ -79,16 +79,16 @@ public class UserController {
 				}
 				us.setUsername(pUser.getUsername());
 			}
-			if (pUser.getName().equals("") == false){
+			if (!pUser.getName().equals("")){
 				us.setName(pUser.getName());
 			}
-			if (pUser.getPassword().equals("") == false){
+			if (!pUser.getPassword().equals("")){
 				us.setPassword(pUser.getPassword());
 			}
-			if (pUser.getAddress().equals("") == false){
+			if (!pUser.getAddress().equals("")){
 				us.setAddress(pUser.getAddress());
 			}
-			if (pUser.getPhone().equals("") == false){
+			if (!pUser.getPhone().equals("")){
 				us.setPhone(pUser.getPhone());
 			}
 			System.out.println(us.getName());
@@ -109,9 +109,7 @@ public class UserController {
 			response = new ResponseEntity<>(HttpStatus.OK);
 		}
 		return response;
-	
-	}
-	
-}
-	
 
+	}
+
+}
