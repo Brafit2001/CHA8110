@@ -32,9 +32,21 @@ public class UserController {
 
 
 	// ----------------- GET USER ----------------------
+	// WITH USERNAME
 	@RequestMapping(value = "/users/{username}", method = RequestMethod.GET)
-	public @ResponseBody ResponseEntity<User> getUserByIduser(@PathVariable String username) {
+	public @ResponseBody ResponseEntity<User> getUserByUsername(@PathVariable String username) {
 		User us = daous.findByUsername(username);
+		if (us == null){
+			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+		}else {
+			return new ResponseEntity<>(us, HttpStatus.OK);
+		}
+	}
+
+	// WITH ID
+	@RequestMapping(value = "/users/{id}", method = RequestMethod.GET)
+	public @ResponseBody ResponseEntity<User> getUserByIduser(@PathVariable Long id) {
+		User us = daous.findById(id).orElse(null);
 		if (us == null){
 			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 		}else {
