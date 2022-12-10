@@ -44,7 +44,7 @@ public class UserController {
 	}
 
 	// WITH ID
-	@RequestMapping(value = "/users/{id}", method = RequestMethod.GET)
+	@RequestMapping(value = "/users/iduser/{id}", method = RequestMethod.GET)
 	public @ResponseBody ResponseEntity<User> getUserByIduser(@PathVariable Long id) {
 		User us = daous.findById(id).orElse(null);
 		if (us == null){
