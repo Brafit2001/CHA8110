@@ -50,13 +50,15 @@ public class ChatController {
     public @ResponseBody ResponseEntity<List<String>> getChats(@PathVariable(value = "emailori") String emailori){
         try{
             List<Message> all_messages = daocha.findByEmailori(emailori);
+			List<Message> all_messages_des = daocha.findByEmaildest(emailori);
+			all_messages.addAll(all_messages_des);
             List<String> all_users = new ArrayList<>();
             for (int i = 0; i< all_messages.size(); i++) {
                 String emailori2 = all_messages.get(i).getEmailori();
                 String emaildest2 = all_messages.get(i).getEmaildest();
-                if(emailori2.equals("ab")) {
+                if(emailori2.equals(emailori)) {
                     all_users.add(emaildest2);
-                }else if(emaildest2.equals("ab")) {
+                }else if(emaildest2.equals(emailori)) {
                     all_users.add(emailori2);
                 }
             }
@@ -78,7 +80,7 @@ public class ChatController {
 
     }
 
-    // ----------------- REQUEST CHAT BETWEEN TOW USERS ----------------------
+    // ----------------- REQUEST CHAT BETWEEN TWO USERS ----------------------
 	@RequestMapping(value = "/conversaciones/{emailori}/{emaildest}", method = RequestMethod.GET, produces = "application/json")
 	public @ResponseBody ResponseEntity<List<Message>> getConversaciones(@PathVariable(value = "emailori") String emailori,
 																		 @PathVariable(value = "emaildest") String emaildest) {
